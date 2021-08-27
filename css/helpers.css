@@ -1,0 +1,192 @@
+
+/*
+*****************
+**** Helpers ****
+*****************
+*/
+
+
+/*
+*****************
+**** Display ****
+*****************
+*/
+
+.d-flex {
+    display: flex;
+}
+.d-block {
+    display: block;
+}
+.d-inline {
+    display: inline;
+}
+.d-inline-block {
+    display: inline-block;
+}
+
+
+/*
+*****************
+**** Buttons ****
+*****************
+*/
+
+.btn {
+    padding: 12px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    outline: none !important;
+}
+.btn.btn-primary {
+    background: var(--bright-blue);
+    color: white;
+}
+.btn.btn-primary:hover {
+    background-color: var(--hover-color);
+    box-shadow: 0px 30px 25px 2px rgba(45, 29, 221, 0.14);
+    transform: translateY(-3px);
+}
+
+.btn.btn-primary:focus {
+    background-color: hsl(245, 97%, 38%)
+}
+
+
+/*
+*****************
+**** Effects ****
+*****************
+*/
+
+.bold-on-hover {
+    transition: all 0.5s;
+}
+
+.bold-on-hover:hover {
+    font-family: "RedHatBold";
+    font-weight: var(--font-weight-lg); 
+}
+.rounded {
+    border-radius: 10px;
+}
+.shadow {
+    box-shadow: 0px 30px 45px 2px rgba(45, 29, 221, 0.14);
+}
+
+
+/*
+***************
+**** Links ****
+***************
+*/
+
+.link {
+    text-decoration: underline;
+}
+.link:hover {
+    text-decoration: none;
+    color: var(--hover-color);
+}
+
+
+/*
+*******************
+**** Font Size ****
+*******************
+*/
+
+.font-size-sm {
+    font-size: 14px;
+}
+.font-size-md {
+    font-size: 18px;
+}
+
+.font-size-lg {
+    font-size: 22px;
+}
+
+
+/*
+*********************
+**** Font Weight ****
+*********************
+*/
+
+.font-weight-sm {
+    font-weight: var(--font-weight-sm); 
+}
+
+.font-weight-md {
+    font-weight: var(--font-weight-md); 
+}
+
+.font-weight-lg {
+    font-family: "RedHatBold";
+    font-weight: var(--font-weight-lg); 
+}
+
+
+/*
+*********************
+**** Text Colors ****
+*********************
+*/
+
+.text-dark {
+    color: var(--dark-blue);
+}
+.text-secondary {
+    color: var(--desaturated-blue);
+}
+
+
+/*
+***************************
+**** Background Colors ****
+***************************
+*/
+
+.bg-dark {
+    background-color: var(--dark-blue);
+}
+
+.bg-secondary {
+    background-color: var(--desaturated-blue);
+}
+
+
+
+
+/*
+*****************
+**** Padding ****
+*****************
+*/
+
+.text-center {
+    text-align: center;
+}
+
+
+/*
+***************
+**** Width ****
+***************
+*/
+
+.w-25 {
+    width: 25% !important;
+}
+.w-50 {
+    width: 50% !important;
+}
+.w-75 {
+    width: 75% !important;
+}
+.w-100 {
+    width: 100% !important;
+}

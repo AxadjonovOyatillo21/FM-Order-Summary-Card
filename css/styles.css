@@ -1,0 +1,148 @@
+
+/*
+******************************
+**** Additional css files ****
+******************************
+*/
+
+@import url(./helpers.css);
+@import url(./font.css);
+@import url(./bs4_styles.css);
+
+/*
+*******************
+**** Variables ****
+*******************
+*/
+
+:root {
+    --hover-color: #766CF1;
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(234, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --default-font-size: 16px;
+    --font-weight-sm: 500;
+    --font-weight-md: 700;
+    --font-weight-lg: 900;
+} 
+
+/*
+************************
+**** Default styles ****
+************************
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: RedHat;
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    background-color: var(--pale-blue);
+}
+
+/*
+*********************
+**** Main styles ****
+*********************
+*/
+.container {
+    width: 90%;
+    margin: 200px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .card {
+    background-color: white;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container .card .card-img {
+    width: 100%;
+}
+
+.container .card .card-body .order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+}
+
+.container .card .card-body .order .payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container .card .card-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-image {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+/*
+************************
+**** Foouter styles ****
+************************
+*/
+footer.attribution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--dark-blue);
+    margin: 50px auto;
+}
+
+footer.attribution p {
+    margin: 5px auto;
+}
+
+footer.attribution p a {
+    display: inline-block;
+    text-decoration: none; 
+    color: var(--dark-blue);
+    padding: 2px 5px;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px; 
+}
+
+/*
+*************
+**** RWD ****
+*************
+*/
+@media (min-width: 0) and (max-width: 464.9px) {
+    .container {
+        margin-top: 100px;
+        width: 95%;
+    }
+    .container .card {
+        width: 90%;
+    }
+    .px-5 {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+    .container .card .card-body .order {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
